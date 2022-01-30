@@ -329,16 +329,17 @@ namespace POE._1
                     
                     if(Map.enemeyArray[i,o] != null && Map.enemeyArray[i,o].Symbol == " M")
                     {
-                        
+                        //only mage attack
                        if(i + 1 == Map.Hero.X_coordinate && o == Map.Hero.Y_coordinate)
                        {
+                            //attack anything above this character
                             Map.enemeyArray[i, o].Attack(Map.Hero);
                        }
                        if (Map.enemeyArray[i + 1, o] != null)
                        {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i+1,o]);
                        }
-                        
+                        //attack anything below this character
                         if (i - 1 == Map.Hero.X_coordinate && o == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -347,7 +348,7 @@ namespace POE._1
                         {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i - 1, o]);
                         }
-                      
+                         //attack anything on the right of this character
                         if (i == Map.Hero.X_coordinate && o + 1 == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -356,7 +357,7 @@ namespace POE._1
                         {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i , o + 1]);
                         }
-                       
+                        //attack anything to the left of this character
                         if (i == Map.Hero.X_coordinate && o - 1  == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -365,7 +366,7 @@ namespace POE._1
                         {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i , o-1]);
                         }
-                 
+                        //above and right
                         if (i +1== Map.Hero.X_coordinate && o + 1 == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -374,7 +375,7 @@ namespace POE._1
                         {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i + 1 , o + 1]);
                         }
-                  
+                        //above and right
                         if (i + 1 == Map.Hero.X_coordinate && o - 1 == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -383,7 +384,7 @@ namespace POE._1
                         {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i+ 1, o - 1]);
                         }
-
+                        //below and left
                         if (i - 1 == Map.Hero.X_coordinate && o + 1 == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -392,7 +393,7 @@ namespace POE._1
                         {
                             Map.enemeyArray[i, o].Attack(Map.enemeyArray[i - 1, o - 1]);
                         }
-
+                        //below and right
                         if (i - 1 == Map.Hero.X_coordinate && o + 1 == Map.Hero.Y_coordinate)
                         {
                             Map.enemeyArray[i, o].Attack(Map.Hero);
@@ -646,12 +647,10 @@ namespace POE._1
             {
                 Map.Hero.weapon = Map.shop.Weaponarray[0];
                 Map.Hero.Gold -= Map.shop.Weaponarray[0].Cost;
-
+                
                 Map.shop.newitem(0);
 
                 shopreload();
-
-
 
             }
             else if (shopinventory.SelectedIndex == 1)

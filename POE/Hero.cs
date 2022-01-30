@@ -23,8 +23,6 @@ namespace POE._1
             this.gold = 100;
         }
 
-       
-
         public override string ToString()
         {
             return "player stats:\n"+"HP:"+HP+"/"+MaxHP+"\n weapon Damage:"+current_damage +"\n["+X_coordinate+","+Y_coordinate+"]\n"+"Gold:"+this.gold+"\n Current weapon:"+ current_weapon+"\n Weapon Range:" +current_range;

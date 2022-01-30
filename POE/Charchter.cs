@@ -38,12 +38,10 @@ namespace POE._1
         {
             X_coordinate = x_coordinate;
             Y_coordinate = y_coordinate;
-            
+
             Damage = damage;
-            
-
-        }
-
+        } 
+       
         public void pickup(Item i)
         {
 
@@ -61,7 +59,6 @@ namespace POE._1
                     target.HP -= this.Damage;
                 }
             }
-         
         }
      
       
@@ -115,8 +112,7 @@ namespace POE._1
         }
 
         public abstract Movement Returnmove(Movement move = 0);
-        
-
+      
         public abstract override string ToString();
 
     }

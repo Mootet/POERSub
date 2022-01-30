@@ -61,9 +61,6 @@ namespace POE._1
                 }
             }
 
-            
-            
-
             create(Tile.TileType.HERO);
             create(Tile.TileType.SHOP);
             for (int i = 0; i <= RandomNumber(1,enemycount ); i++)
@@ -85,9 +82,7 @@ namespace POE._1
             {
                 create(Tile.TileType.GOLD);
             }
-                
-
-
+            
         }
 
         public Item GetItemAtPostion(int X, int Y)
@@ -124,13 +119,9 @@ namespace POE._1
             mapArray = new Tile[MaxWidth_X1, MaxHeight_Y1];
             enemeyArray = new Enemey[MaxWidth_X1, MaxHeight_Y1];
             itemarray = new Item[MaxWidth_X1, MaxHeight_Y1];
-            
            
-
             populateArray();
             
-            
-
         }
 
         public void UpdateVision(RichTextBox rtb)
@@ -207,11 +198,7 @@ namespace POE._1
                     {
                         l1abel.Text += Convert.ToString(mapArray[i, o]);
                     }
-                    
-
-                    
-
-
+                  
                 }
             }
             if (hero.weapon != null)
@@ -222,12 +209,8 @@ namespace POE._1
                 hero.Damage = hero.current_damage;
                 
             }
-            
-            
-
+         
         }
-
-       
 
         private Tile create(Tile.TileType type)
 

@@ -22,8 +22,6 @@ namespace POE._1
                 Random_weapon(i);
             }
 
-
-
         }
 
         public void newitem(int i)
@@ -67,8 +65,6 @@ namespace POE._1
                 return false;
             }
 
-
-
         }
 
         private void Random_weapon(int arrayorder)
@@ -92,6 +88,7 @@ namespace POE._1
             }
 
         }
+        
         public void Buy(int num)
         {
 
@@ -99,7 +96,6 @@ namespace POE._1
 
         public weapon[] Weaponarray { get => weaponarray; set => weaponarray = value; }
         internal Charchter Buyer { get => buyer; set => buyer = value; }
-
 
         public override string ToString()
         {

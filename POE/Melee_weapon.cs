@@ -36,8 +36,7 @@ namespace POE._1
             
 
         }
-        
-        
+      
         public override string ToString()
         {
             if(type == Type.Dagger)

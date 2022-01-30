@@ -16,8 +16,8 @@ namespace POE._1
             this.Damage = 2;
             this.gold = 2;
             Weapon = new Melee_weapon(this.x_coordinate, this.y_coordinate, 'S', Melee_weapon.Type.Longsword);
-
         }
+        
 
         public override Movement Returnmove(Movement move = Movement.No_Movement)
         {
