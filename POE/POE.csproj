@@ -66,6 +66,7 @@
     <Compile Include="Health.cs" />
     <Compile Include="Hero.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Leader.cs" />
     <Compile Include="Mage.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Melee_weapon.cs" />
