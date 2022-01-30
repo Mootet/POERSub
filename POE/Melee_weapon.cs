@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POE
+namespace POE._1
 {
     class Melee_weapon : weapon
     {
@@ -23,25 +23,24 @@ namespace POE
                 Damage = 3;
                 Cost = 3;
                 Range = 1;
-
-            }
-            else if (weapon_type == Type.Longsword)
+                
+            }else if (weapon_type == Type.Longsword)
             {
                 Weapon_type = "Longsword";
                 Durability = 6;
                 Damage = 4;
                 Cost = 5;
                 Range = 1;
-
+                
             }
-
+            
 
         }
-
-
+        
+        
         public override string ToString()
         {
-            if (type == Type.Dagger)
+            if(type == Type.Dagger)
             {
                 return "\n" + type + " \n durability:" + Durability + "\n Damge:" + Damage + "\n price:" + Cost + "\n range" + Range;
             }

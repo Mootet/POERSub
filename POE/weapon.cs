@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POE
+namespace POE._1
 {
     [Serializable]
     abstract class weapon : Item
