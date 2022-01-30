@@ -281,6 +281,19 @@ namespace POE._1
                     }
                     return enemeyArray[rndX, rndY] = new Mage(rndX, rndY);
                 }
+                else
+                {
+                    while (rndX > MaxWidth_X1 && rndX != hero.X_coordinate)
+                    {
+                        rndX = RandomNumber(MinWidth_X1, MaxWidth_X1);
+                    }
+                    while (rndY > MaxHeight_Y1 && rndY != hero.Y_coordinate)
+                    {
+                        rndY = RandomNumber(MinHeight_Y1, MaxHeight_Y1);
+                    }
+                    return enemeyArray[rndX, rndY] = new Leader(rndX, rndY);
+                }
+
             }
             else if(type == Tile.TileType.GOLD)
             {
