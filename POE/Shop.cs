@@ -7,6 +7,8 @@ using System.ComponentModel;
 
 namespace POE._1
 {
+
+    //https://github.com/Mootet/POERSub
     class Shop : Tile
     {
         private weapon[] weaponarray;

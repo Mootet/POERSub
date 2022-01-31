@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace POE._1
 {
+    //https://github.com/Mootet/POERSub
+
     [Serializable]
     class Ranged_weapon : weapon
     {

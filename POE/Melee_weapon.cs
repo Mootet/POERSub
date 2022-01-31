@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace POE._1
 {
+    //https://github.com/Mootet/POERSub
+
     class Melee_weapon : weapon
     {
         public Type type;

@@ -9,6 +9,8 @@ using System.Windows.Forms;
 
 namespace POE._1
 {
+    //https://github.com/Mootet/POERSub
+
     [Serializable]
     class Map
     {

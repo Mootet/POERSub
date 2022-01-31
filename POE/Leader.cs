@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace POE._1
 {
+    //https://github.com/Mootet/POERSub
     class Leader : Enemey
     {
         public Leader(int x_coordinate, int y_coordinate) : base(x_coordinate, y_coordinate, 2, " L", 20)

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace POE._1
 {
+    //https://github.com/Mootet/POERSub
+
     [Serializable]
     abstract class weapon : Item
     {
